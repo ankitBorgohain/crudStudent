@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="https://thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Showing All</title>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<style>
+	.form-group{
+	margin: 1rem 1rem 1rem 1rem;
+	}
+	.form-check{
+	margin: 1rem 1rem 1rem 1rem;
+	}
+	.btn-primary{
+	margin: 1rem 1rem 1rem 1rem;
+	}
+	
+	</style>
+</head>
+<body>
+<!-- navbar -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="nav-link" href="/index">Index</a>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav">
+      <li class="nav-item active">
+        <a class="nav-link" href="/viewI">View Info <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/addI">Add Info</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/updateI">Update Info</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/deleteI">Delete Info</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+<table class="table" >
+  <thead>
+    <tr>
+      <th scope="col">StudentID</th>
+      <th scope="col">Name</th>
+      <th scope="col">Branch</th>
+    </tr>
+  </thead>
+  <tbody>
+  <tr th:each="student : ${slist}">
+  		<td th:text="${student.id}"></td>
+        <td th:text="${student.name}"></td>
+        <td th:text="${student.branch}"></td>
+        
+    </tr>
+ 
+    
+
+  </tbody>
+</table>
+
+</body>
+</html>

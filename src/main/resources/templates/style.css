@@ -1,0 +1,220 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;300&family=Sofia&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;300&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+}
+button, input, textarea, select{
+    font:inherit;
+}
+a{
+    color: #22333b ;
+    text-decoration: none;
+}
+:root{
+    --color-btn-blue: #00bbf9;
+    --color-bg-yellow: #ffc300;
+    --color-text-dark: #22333b;
+}
+header {
+    font-family: 'Sofia', cursive;
+    text-decoration: underline #22333b;
+    margin: 1rem 1rem 0.1rem 1rem ;
+    padding: 1rem 1rem 1rem 1rem;
+    text-align: center;
+}
+
+body {
+    font-size: 22px;
+    background: rgb(255, 195, 0, .59);
+    margin: 0rem 1rem 1rem 1rem;
+    font-family: 'Inter', sans-serif;
+}
+p{  margin: 1rem;
+    border: 1px black solid;
+}
+
+main {
+    margin: 0rem 1rem 1rem 1rem;
+    font-size: 1rem;
+    font-family: 'Inter', sans-serif;
+    font-weight: 800;
+    padding: 2rem 2rem 2rem 2rem;
+    border: 1px black solid;
+    text-align: center;
+}
+
+h1{
+    font-size: 3rem;
+    color: #22333b;
+   
+}
+
+h3 {
+    color: #22333b;
+    padding: 0.5rem;
+    font-size: 1.8rem;
+    text-align: center;
+    
+}
+
+
+form{
+    
+    border: 0.3rem #22333b solid;
+    border-radius: 0.8rem;
+    padding: 2rem 2rem 2rem 2rem ;
+    width: fit-content;
+    background:rgb(255, 195, 0, 0.8) ;
+    
+}
+
+div{
+    
+    padding: 1rem 1rem 1rem 1rem;
+}
+
+p{
+    color: var(--color-text-dark);
+}
+
+/* 
+------To access the elements inside we can use-------
+p span {
+    font-size:10px;
+    background-color:red;
+}   
+*/
+
+.submit-btn{
+    margin: 0.2rem 1rem 1rem 1rem;
+    font-size: 1.8rem;
+    padding: 0.1rem 0.4rem 0.1rem 0.4rem;
+    border-radius: 0.7rem;
+    background: white;
+    color: #22333b;
+    transition: all 300ms ease;
+    
+}
+.submit-btn:hover{
+
+    color:white;
+    background:#3a86ff ;
+}
+.remove-btn{
+    margin: 1rem 1rem 1rem 1rem;
+    font-size: 1.8rem;
+    padding: 0.1rem 0.4rem 0.1rem 0.4rem;
+    border-radius: 0.7rem;
+    background: white;
+    color: #b82121;
+    transition: all 300ms ease;
+    
+}
+.remove-btn:hover{
+    color: white;
+    background-color: #b82121;
+}
+.dark{
+    color: rgb(31, 30, 30);
+}
+.highlight{
+    text-transform: uppercase;
+    background-color: #87ceeb;
+}
+
+.submit-btn-div{
+    
+    display: flex;
+    justify-content: center;
+    
+}
+.text-area{
+    border-radius: 0.2rem;
+    
+    
+}
+.parent-nav{
+    display: flex;
+    margin-top: 0px;
+}
+
+.nav-bar{
+    padding: 2rem;
+    width: 100vw;
+    border-radius: 1rem;
+    font-weight: small;
+    color:#22333b;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+.navbar-element{
+    
+    text-decoration: none;
+    padding: 0.4rem 1rem 0.4rem 1rem;
+    margin: 1rem 0.5rem 1rem .5rem;
+    background-color: aliceblue;
+    color: #22333b;
+    border-radius: .2rem;
+    text-align: center;
+    transition: all 300ms ease;
+    
+}
+.navbar-element:hover {
+
+    background:rgb(207, 165, 28);
+    font-size: smaller;
+    color: white;
+    text-decoration: underline white 1px;
+    
+}
+
+
+.index-btn{
+    margin: 1rem 1rem 1rem 1rem;
+    text-align: center;
+}
+.button{
+    margin: 1rem;
+    padding: 1rem;
+    font-weight: bolder;
+    max-width: max-content;
+    border-radius: 0.3rem;
+    cursor: pointer;
+}
+.button1 {
+    background-color: white; 
+    color: black; 
+    border: 2px solid #4CAF50;
+  }
+  .button1:hover {
+    background-color: #4CAF50;
+    color: white;
+  }
+  .button2 {
+    background-color: white; 
+    color: black; 
+    border: 2px solid #dd690b;
+  }
+  .button2:hover {
+    background-color: #dd690b; 
+    color: white; 
+  }
+  .logo{
+    
+    height: 2.5rem;
+    margin: 1rem;
+    
+  }
+  .getInfo{
+    text-align: center;
+  }
+  .label-viewInfo{
+    margin: 1rem;
+  }
+  .addInfo-main-div{
+    text-align: center;
+    
+  }
